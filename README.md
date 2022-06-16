@@ -23,6 +23,9 @@
     kubectl create secret generic proxy -n nautible --from-literal=http_proxy=<HTTPプロキシ設定> --from-literal=https_proxy=<HTTPSプロキシ設定>
     ```
 
+* deployフォルダのマニフェストに証明書設定を行う  
+  詳細は「nautible-awの開発」の「証明書生成」と「証明書設定」参照
+
 * deployフォルダにて以下のコマンドを実行してnautible-awをデプロイする
     ```
     kubectl apply -f .
